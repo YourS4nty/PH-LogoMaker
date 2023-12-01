@@ -62,7 +62,7 @@ function save() {
   let link = document.createElement("a");
   let canvas = document.getElementsByTagName("canvas")[0];
   link.setAttribute("download", casex + hub + ".png");
-  link.setAttribute("href", canvas.toDataURL("image/png;base64"));
+  link.setAttribute("href", canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
   if (document.createEvent) {
     e = document.createEvent("MouseEvents");
     e.initMouseEvent(
