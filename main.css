@@ -33,6 +33,14 @@ body {
   font-size: 50px;
   border-radius: 10px;
   border: none;
+  cursor: pointer;
+  transition: background .3s ease;
+}
+
+#save:hover{
+  background: #000;
+  color: orange;
+  transition: background .3s ease;
 }
 
 #case {
