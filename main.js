@@ -9,8 +9,8 @@ var mp = (multiplier = 10); // Number to mulitply all variables used in creating
 var iM = (imageMargin = 30);
 
 function draw(
-  casex = document.getElementById("case").innerHTML,
-  hub = document.getElementById("hub").innerHTML
+  casex = document.getElementById("case").innerText,
+  hub = document.getElementById("hub").innerText
 ) {
   const canvas = document.getElementsByTagName("canvas")[0];
   const caseDiv = document.getElementById("case");
@@ -56,8 +56,8 @@ function draw(
 }
 
 function save() {
-  casex = document.getElementById("case").innerHTML;
-  hub = document.getElementById("hub").innerHTML;
+  casex = document.getElementById("case").innerText;
+  hub = document.getElementById("hub").innerText;
 
   let link = document.createElement("a");
   let canvas = document.getElementsByTagName("canvas")[0];
